@@ -1,6 +1,7 @@
 # Created by Brandon Hatfield
 # 20230829
 # This script was created to facilitate gathering of basic computer information on an enterprise network
+# and will create a message box with the info
 
 Add-Type -AssemblyName PresentationFramework
 
