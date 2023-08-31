@@ -9,4 +9,4 @@ $SerialNumber = (Get-WmiObject -class win32_bios).SerialNumber
 $MacAddress = (Get-NetAdapter | Where-object {$_.Status -match 'Up'}).MacAddress
 $IPAddress = (Get-NetIPAddress -AddressFamily IPv4 -AddressState Preferred).IPAddress
 
-$msgBoxInput =  [System.Windows.MessageBox]::Show("Computer Name : $ComputerName `nSerial # $SerialNumber `nMac Adress : $MacAddress `nIP Address $IPAddress","Computer Info")
+[System.Windows.MessageBox]::Show("Computer Name : $ComputerName `nSerial # $SerialNumber `nMac Adress : $MacAddress `nIP Address $IPAddress","Computer Info")
